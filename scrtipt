@@ -14,16 +14,6 @@ need_root() {
 }
 need_root "$@"
 
-# --- Credenciales por entorno (NO se publican en el script) ---
-ACCOUNT_ID="${MAXMIND_ACCOUNT_ID:-}"
-LICENSE_KEY="${MAXMIND_LICENSE_KEY:-}"
-if [[ -z "${ACCOUNT_ID}" || -z "${LICENSE_KEY}" ]]; then
-  echo "❌ Faltan variables MAXMIND_ACCOUNT_ID / MAXMIND_LICENSE_KEY."
-  echo "   Ejemplo:"
-  echo "   MAXMIND_ACCOUNT_ID=XXXX MAXMIND_LICENSE_KEY=YYYY sudo -E bash install_mtr_geo.sh"
-  exit 1
-fi
-
 # --- Paquetes base ---
 if ! command -v apt-get >/dev/null 2>&1; then
   echo "❌ Instalador preparado para Debian/Ubuntu (apt)."; exit 1
