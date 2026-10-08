@@ -1,0 +1,18 @@
+   cff-version: 1.2.0
+   message: "If you use this software, please cite it as below."
+   title: "mtr-geo: hop-level AS, organization and geolocation context for mtr"
+   type: software
+   authors:
+     - family-names: "Suntaxi Cocanguilla"
+       given-names: "Medardo Jairo"
+   version: "1.0"
+   date-released: "2026-10-08"
+   license: MIT
+   repository-code: "https://github.com/jhairos/mtr-geo"
+   keywords:
+     - mtr
+     - traceroute
+     - network security
+     - BGP
+     - ASN
+     - geolocation
